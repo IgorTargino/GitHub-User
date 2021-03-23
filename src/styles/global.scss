@@ -1,0 +1,40 @@
+
+:root {
+  --background: #040F16;
+  --gray: #D8E1E9;
+  --white: #fff;
+  --black: #000;
+  --text: #E5E5E5;
+  --cyan: #7392B7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px 'Opens Sans', Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  justify-content: center;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  cursor: pointer;
+}
+
+.App {
+  background: var(--gray);
+}
+
+
+
