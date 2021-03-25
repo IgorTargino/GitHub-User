@@ -1,16 +1,23 @@
-import { Profile, Input } from "./components";
-
+import { Profile, Input, Repos } from "./components";
 import "./styles/global.scss";
+
 import ContextProvider from "./context";
-// Utility Types
+import { useState } from "react";
+
 
 function App() { 
+  const [session, setSession] = useState(false); 
   
   return (
     <ContextProvider >
       <div className="App">
-        <Input/> 
-        <Profile/>
+        <Input setSession={setSession}/> 
+        {session 
+        ? <>
+          <Profile/>
+          <Repos /> 
+          </>
+        : ''}
       </div>
     </ContextProvider>
   );
