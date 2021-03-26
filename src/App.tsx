@@ -1,8 +1,8 @@
-import { Profile, Input, Repos } from "./components";
+import { Profile, Input, Repos, Widget } from "./components";
 import "./styles/global.scss";
 
 import ContextProvider from "./context";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 function App() { 
@@ -12,12 +12,7 @@ function App() {
     <ContextProvider >
       <div className="App">
         <Input setSession={setSession}/> 
-        {session 
-        ? <>
-          <Profile/>
-          <Repos /> 
-          </>
-        : ''}
+        {session && <Widget/>}
       </div>
     </ContextProvider>
   );

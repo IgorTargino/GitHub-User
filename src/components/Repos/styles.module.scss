@@ -27,6 +27,7 @@
 .data {
   display: flex;
   flex-direction: column;
+  width: 100%;
   padding: 1rem 1.5rem;
 
   justify-content: space-between;
@@ -42,12 +43,18 @@
   section {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-between;
 
-    .star{
-      margin: 0rem 0.35rem 0 1rem;
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
   }
+}
+
+.star{
+  margin: 0rem 0.15rem 0 1rem;
 }
 
 .containerLink {
@@ -71,6 +78,7 @@
 
   &:hover {
     color: var(--white);
-    size: 100;
+
+    cursor: pointer;
   }
 }

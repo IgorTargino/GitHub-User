@@ -7,8 +7,6 @@ import { AiFillStar, AiOutlineLink } from "react-icons/ai";
 
 import { useState } from "react";
 
-
-
 function Repos() {
   const { reposData } = useProfile();
   const [repo, setRepo] = useState(0);
@@ -33,18 +31,24 @@ function Repos() {
         <div className={styles.data}>
           <h2>{reposData[repo].name}</h2>
           <p>{reposData[repo].description}</p>
-
           <section>
-            <span>{reposData[repo].language}</span>
-            <AiFillStar className={styles.star} />
-            <span>{reposData[repo].stargazers_count}</span>
+            <div>
+              <span>{reposData[repo].language}</span>
+              <AiFillStar className={styles.star} />
+              <span>{reposData[repo].stargazers_count}</span>
+            </div>
+            <span>{`${repo+1}/${reposData.length}`}</span>
           </section>
+
         </div>
 
         <div className={styles.containerLink}>
-          <a href={reposData[repo].homepage || reposData[repo].html_url} target="_blank">
+          <a
+            href={reposData[repo].homepage || reposData[repo].html_url}
+            target="_blank"
+          >
             <AiOutlineLink size={50} />
-          </a>  
+          </a>
         </div>
       </div>
 

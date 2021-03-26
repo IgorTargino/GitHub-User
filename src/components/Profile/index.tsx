@@ -1,10 +1,11 @@
+import { useEffect } from 'react';
 import { useProfile } from '../../context/GitHubUserContext';
 
 import styles from './styles.module.scss';
 
 function Profile() {
   const { userData } = useProfile();
-
+  
   return (
     <div className={styles.container}>
       <img src={userData.avatar_url} alt=""/>
