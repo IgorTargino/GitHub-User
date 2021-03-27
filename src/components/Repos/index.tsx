@@ -28,17 +28,19 @@ function Repos() {
       />
 
       <div className={styles.repositories}>
+        
         <div className={styles.data}>
-          <h2>{reposData[repo].name}</h2>
+          <h1>{reposData[repo].name}</h1>
           <p>{reposData[repo].description}</p>
-          <section>
+
+          <div className={styles.footer}>
             <div>
-              <span>{reposData[repo].language}</span>
+              <p>{reposData[repo].language}</p>
               <AiFillStar className={styles.star} />
-              <span>{reposData[repo].stargazers_count}</span>
+              <p>{reposData[repo].stargazers_count}</p>
             </div>
-            <span>{`${repo+1}/${reposData.length}`}</span>
-          </section>
+            <p>{`${repo+1}/${reposData.length}`}</p>
+          </div>
 
         </div>
 
@@ -47,7 +49,7 @@ function Repos() {
             href={reposData[repo].homepage || reposData[repo].html_url}
             target="_blank"
           >
-            <AiOutlineLink size={50} />
+            <AiOutlineLink size={25} />
           </a>
         </div>
       </div>

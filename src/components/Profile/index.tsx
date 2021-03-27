@@ -8,14 +8,14 @@ function Profile() {
   
   return (
     <div className={styles.container}>
-      <img src={userData.avatar_url} alt=""/>
+      <img src={userData.avatar_url} alt="avatar github"/>
       <div className={styles.data}>
-        <h1>{userData.name}</h1>
+        <h2>{userData.name}</h2>
         <p>{userData.bio}</p>
-        <section>
-          <span>{userData.followers} followers</span>
-          <span>{userData.following} following</span>
-        </section>
+        <p>
+          {userData.followers} followers &nbsp;
+          {userData.following} folling
+        </p>
       </div>
     </div>
   );

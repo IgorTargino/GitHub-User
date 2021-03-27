@@ -1,55 +1,70 @@
 .container {
   display: flex;  
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  margin: 0 auto;
 
   padding: 1rem 0;
 
-  width: 35rem;
+  width: 100%;
   height: auto;
 }
 
 .repositories {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 
-  width: 31.875rem;
-  min-height: 9.5rem;
+  border-radius: 10px;
+
+  width: 80%;
 
   color: var(--white);
 
   background: var(--background);
   box-shadow: 0px 50px 70px -20px rgba(0, 0 ,0, 0.5);
+
+  @media(max-width: 450px) {
+    flex-direction: column;
+  }
 }
 
 .data {
   display: flex;
   flex-direction: column;
+
   width: 100%;
-  padding: 1rem 1.5rem;
+
+  padding: 1rem;
 
   justify-content: space-between;
 
   font-size: 0.875rem;
   color: rgba(193, 193, 193, 0.88);
 
-  h2 {
+  > p {
+    padding-top: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
     font-weight: bold;
     color: var(--blue);
   }
+}
 
-  section {
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding-top: 1rem;
+
+  div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
-    div {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
+    align-items: center;
   }
 }
 
@@ -61,8 +76,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  min-width: 5.25rem;
+  padding: 0 1rem;
 
   background: var(--blue);
 
@@ -71,6 +85,10 @@
   &:hover {
     background: #076eb3;
     cursor: pointer;
+  }
+
+  @media(max-width: 450px) {
+    border-radius: 0 0 10px 10px;
   }
 }
 

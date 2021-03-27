@@ -3,6 +3,8 @@ import Profile from '../Profile';
 import Repos from '../Repos';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
+import styles from './styles.module.scss';
+
 function Widget() {
   const [loading, setLoading] = useState(true);
 
@@ -13,7 +15,7 @@ function Widget() {
   }, [])
 
   return (
-    <div>
+    <div className={styles.container}>
       {loading && <CircularProgress/>}
       {!loading && 
       <>
