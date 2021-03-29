@@ -47,7 +47,7 @@ function Repos() {
         <div className={styles.containerLink}>
           <a
             href={reposData[repo].homepage || reposData[repo].html_url}
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             <AiOutlineLink size={25} />
           </a>

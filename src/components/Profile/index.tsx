@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { useProfile } from '../../context/GitHubUserContext';
 
 import styles from './styles.module.scss';

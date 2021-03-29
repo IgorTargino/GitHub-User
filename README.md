@@ -1,46 +1,64 @@
-# Getting Started with Create React App
+<h1 align="center">
+  <a href="" rel="noopener">
+  GitHub User
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🧐 Sobre o projeto
 
-## Available Scripts
+User-GitHub é uma aplicação na qual o usuário informa o seu GitHub e retorna o perfil com seus repositórios publicos.
 
-In the project directory, you can run:
+Objetivo: Praticar gerenciamento de estados com context api e requisição http com axios.
 
-### `yarn start`
+## ⚙️ Funcionalidades
+- [x] Front-end;
+  - [x] Pagina Principal;
+  - [x] Busca usuário com api do GitHub
+  - [x] Lista repositórios do usuário
+  - [x] Responsividade
+  - [x] Link de redirecionamento para aplicação ou repositório
+## Como executar o projeto
+### Pré-requisitos
+- git 
+- Node.js
+- NPM ou Yarn
+### Instalação
+```
+# Abra o terminal e copie este repositório com o comando
+$ git clone https://github.com/IgorTargino/user-github.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Acesse a pasta do projeto no prompt de comando 
+$ cd 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Instale as dependências
+yarn install
+ou
+$ npm install
 
-### `yarn test`
+# Execute a aplicação
+$ yarn dev
+ou
+$ npm run dev
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Acesse http://localhost:3000 no seu navagador.
+```
+## 🚀 Tecnologias 
+Tecnologias utilizadas para desenvolver o projeto:
+- React.js
+- Typescript
+- Scss
+- Context API
+- Axios
+- React-icons
+- Material-ui
 
-### `yarn build`
+## 🦸‍♂️ **Autor**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p>
+ <sub><strong>🌟 Igor Targino Marinho🌟</strong></sub>
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[![Linkedin Badge](https://img.shields.io/badge/-IgorTargino-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/igor-targino/)](https://www.linkedin.com/in/igor-targino/)
+[![Gmail Badge](https://img.shields.io/badge/-igortargino01@gmail.com-c14438?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:igortargino01@gmail.com)](mailto:igortargino01@gmail.com)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+>Este projeto foi desenvolvido com ❤️ por **[Igor Targino](https://github.com/IgorTargino)**💜<br> 
+Se achou interessante, dá uma ⭐ que vai me ajudar 😉.

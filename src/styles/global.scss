@@ -26,6 +26,7 @@ html {
   display: flex;
   justify-content: center;
   
+  
   @media (max-width: 1080px) {
     font-size: 93.75%; //15px
   }
@@ -62,6 +63,8 @@ a {
   flex-direction: column;
 
   gap: 1rem;
+
+  align-self: center;
 
   justify-content: center;
   align-items: center;
