@@ -13,7 +13,7 @@ function Profile() {
         <p>{userData.bio}</p>
         <p>
           {userData.followers} followers &nbsp;
-          {userData.following} folling
+          {userData.following} following
         </p>
       </div>
     </div>
