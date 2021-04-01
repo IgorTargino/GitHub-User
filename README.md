@@ -3,6 +3,11 @@
   GitHub User
 </h1>
 
+Tela 1 - desktop | Tela 2 - desktop 
+:-------------------------:|:-------------------------:
+![](./src/assets/telas/tela-desktop-1.png)  |  ![](/src/assets/telas/tela-desktop-2.png)
+![](./src/assets/telas/tela-mobile-1.png)  |  ![](/src/assets/telas/tela-mobile-2.png)
+
 ## 🧐 Sobre o projeto
 
 User-GitHub é uma aplicação na qual o usuário informa o seu GitHub e retorna o perfil com seus repositórios publicos.
