@@ -40,9 +40,9 @@ ou
 $ npm install
 
 # Execute a aplicação
-$ yarn dev
+$ yarn start
 ou
-$ npm run dev
+$ npm start
 
 # Acesse http://localhost:3000 no seu navagador.
 ```
