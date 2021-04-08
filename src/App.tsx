@@ -4,15 +4,14 @@ import "./styles/global.scss";
 import ContextProvider from "./context";
 import { useState } from "react";
 
+function App() {
+  const [session, setSession] = useState(false);
 
-function App() { 
-  const [session, setSession] = useState(false); 
-  
   return (
-    <ContextProvider >
+    <ContextProvider>
       <div className="App">
-        <Input setSession={setSession}/> 
-        {session && <Widget/>}
+        <Input setSession={setSession} />
+        {session && <Widget />}
       </div>
     </ContextProvider>
   );
