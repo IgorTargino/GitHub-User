@@ -5,8 +5,8 @@
 
 Tela 1 - desktop | Tela 2 - desktop 
 :-------------------------:|:-------------------------:
-![](./src/assets/telas/tela-desktop-1.png)  |  ![](/src/assets/telas/tela-desktop-2.png)
-![](./src/assets/telas/tela-mobile-1.png)  |  ![](/src/assets/telas/tela-mobile-2.png)
+![](./.github/tela-desktop-1.png)  |  ![](./.github/tela-desktop-2.png)
+![](./.github/tela-mobile-1.png)  |  ![](./.github/tela-mobile-2.png)
 
 ## 🧐 Sobre o projeto
 
@@ -32,7 +32,7 @@ Objetivo: Praticar gerenciamento de estados com context api e requisição http 
 $ git clone https://github.com/IgorTargino/user-github.git
 
 # Acesse a pasta do projeto no prompt de comando 
-$ cd 
+$ cd user-github
 
 # Instale as dependências
 yarn install
